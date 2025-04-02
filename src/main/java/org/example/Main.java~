@@ -39,15 +39,13 @@ public class Main {
     public static void main(String[] args) {
         Employee e1= new Employee(1L,"Bassel","Ahmed", LocalDate.of(2018,1,1),new BigDecimal("20.00"),
                 "Ex1",LocalDate.of(2023,2,2),new BigDecimal("1"));
-        Employee e2= new Employee(5L,"Bakr","Abdelhamid", LocalDate.of(2018,1,1),new BigDecimal("20.00") );
-        Employee e3= new Employee(3L,"Diaa","ibrahim", LocalDate.of(2024,1,1),new BigDecimal("20.00") );
-        Employee e4= new Employee(2L,"mazen","abdelhamid", LocalDate.of(2024,1,1),new BigDecimal("20.00") );
+        Employee e2= new Employee(1L,"Bakr","Abdelhamid", LocalDate.of(2018,1,1),new BigDecimal("20.00") );
+        Employee e3= new Employee(1L,"Diaa","ibrahim", LocalDate.of(2024,1,1),new BigDecimal("20.00") );
 
         List<Employee> employees = new ArrayList<>();
         employees.add(e1);
         employees.add(e2);
         employees.add(e3);
-        employees.add(e4);
 
         printJson(sortEmployee(employees));
         System.out.println("_______________________________________________ \n");
