@@ -14,14 +14,15 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  id-token: write
+  security-events: write
+  actions: read    
+
 jobs:
   build:
-    permissions:
-      contents: read
-      id-token: write
-      security-events: write
-      actions: read
-
+  
     runs-on: ubuntu-latest
 
     steps:
